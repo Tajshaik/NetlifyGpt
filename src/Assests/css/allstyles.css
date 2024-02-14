@@ -83,7 +83,6 @@ p{
 .img-logo-1{
     width: 10%;
     height: 10%;
-    position: relative;
 }
 
 .header-container{
@@ -92,7 +91,7 @@ p{
     background:  linear-gradient(to bottom, black, transparent);
     border: none;
     opacity: 50;
-    position: relative;
+    position: absolute;
 }
 
 .signout-btn{
@@ -102,6 +101,8 @@ p{
     border-radius: 6px;
     height: 2rem;
     margin-top: 8px;
+    order: none;
+    margin-right: 6px;
 }
 
 .name-head{
@@ -116,16 +117,31 @@ p{
 .Movie-title{
     position: absolute;
     width: 25%;
-    margin-left: 4rem;
-    margin-top: 7rem;
+    margin-left: 7rem;
+    margin-top: 12rem;
     color: white;
+    /* background: linear-gradient(to right, black, transparent); */
+} 
+
+.title-btn-play{
+    width: 30%;
+    height: 2rem;
+    background: white;
+    border: none;
+    border-radius: 6px;
+    color: black;
+}
+
+.title-btn-play:hover{  
+    opacity: 70%;
+    cursor: pointer;
 }
 
 .title-btn{
     width: 30%;
     height: 2rem;
     background: gray;
-    opacity: 80%;
+    opacity: 60%;
     border: none;
     border-radius: 6px;
     color: white;
@@ -137,10 +153,41 @@ p{
 }
 
 .background-movie{
-    position: absolute;
+    width: 100%;
 }
 
 .background-movie iframe{
-    width: 98vw;
-    height: calc(70vw/1.77);
+    /* width: 98vw;
+    height: calc(70vw/1.77); */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
 }
+
+.poster-img{
+    width:10%;
+    height: 10%;
+}
+
+.suggestions-container{
+    background: rgb(36, 34, 34);
+    overflow: hidden;
+    color: white;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   
+}
+.Movie-suggestions {
+    display: flex;
+    gap: 8px;
+   overflow-y: scroll;
+}
+
+.suggestions-title{
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+

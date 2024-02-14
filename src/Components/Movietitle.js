@@ -8,7 +8,7 @@ const Movietitle = ({movie}) => {
         <h1>{movie?.original_title}</h1>
         <p>{movie?.overview}</p>
         <div className='title-btn-container'>
-            <button className='title-btn'>▶ Play</button>
+            <button className='title-btn-play'>▶ Play</button>
             <button className='title-btn'>ℹ️  More info</button>
         </div>
     </div>

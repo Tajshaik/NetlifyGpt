@@ -7,12 +7,12 @@ const Moviecontainer = () => {
     const movie= useSelector( store => store.Movies?.nowPlayingMovies)
     if(!movie) return;
 
-    const mainMovie = movie[0]
+    const mainMovie = movie[6]
     console.log(movie)
   return (
     <div>
-        <Backgroundmovie movieId={mainMovie?.id}/>
         <Movietitle movie={mainMovie}/>
+        <Backgroundmovie movieId={mainMovie?.id}/>
     </div>
   )
 }
